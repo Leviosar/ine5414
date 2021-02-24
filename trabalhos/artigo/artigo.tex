@@ -1,5 +1,7 @@
 \documentclass[12pt]{article}
 
+\usepackage[portuguese]{babel}
+
 \author{João Vitor Maia Neves Cordeiro}
 \title{Aplicações de machine learning em IoT: uma visão sobre o estado da arte}
 \date{\today}
@@ -26,6 +28,11 @@ Da mesma forma, é notável que a expansão do mercado de IoT seja suportada pel
 
 \subsection{Justificativa}
 
+Como será visto melhor em seguida, os dois principais conceitos trabalhados nesse artigo estão em grande foco no cenário mundial, com novas pesquisas sendo realizadas todos os dias tanto no âmbito acadêmico quanto institucional.
+
+Dessa forma, é essencial que sejam realizadas revisões bibliográficas sistemáticas com frequência, para verificar qual o estado atual dessas pesquisas. Somente a partir de um processo
+de revisão desses é possível compreender o estado da arte e definir prioridades de pesquisa futuras.
+
 \subsection{Objetivos Gerais}
 
 Esse artigo se propõe a introduzir alguns conceitos básicos para o melhor entendimento de seu conteúdo, discutir sobre as principais aplicações de técnicas de aprendizado de máquina em IoT bem como apontar avanços notáveis nessa área.
@@ -50,12 +57,33 @@ De forma mais prática, machine learning é área da ciência da computação qu
 
 A primeira definição do termo \emph{internet of things (IoT)} veio do trabalho de Ashton \emph{et al.} e pode ser traduzido para "uma rede aberta e abrangente de objetos inteligentes que têm a capacidade de se autoorganizar, compartilhar informações, dados e recursos, reagir e agir diante de situações e mudanças no ambiente". Desde então, os "objetos inteligentes" foram renomeados para "coisas" (\emph{things}) e são descritos como dispositivos de hardware e software capaz de se conectar a uma rede com capacidade para performar uma funcionalidade específica. 
 
-Hoje, mais de 20 anos após a primeira definição, os dispositivos IoT invadiram as casas e indústrias do mundo, adquirindo um papel essencial na sociedade moderna e que segundo recente análise [iot] está em crescente tanto em lucro quanto em produtividade. Essas tecnologias podem se espalhar por diversas áreas, sendo as mais notáveis: automação residencial, agricultura inteligente e automação industrial.
+Hoje, mais de 20 anos após a primeira definição, os dispositivos IoT invadiram as casas e indústrias do mundo, adquirindo um papel essencial na sociedade moderna e que segundo recente análise \cite{analisis} está em crescente tanto em lucro quanto em produtividade. Essas tecnologias podem se espalhar por diversas áreas, sendo as mais notáveis: automação residencial, agricultura inteligente e automação industrial.
 
 \section{Trabalhos correlatos}
 
-\subsection{A Survey of Machine and Deep Learning Methods for Internet of Things
-(IoT) Security [1]}
+A tabela a seguir contendo uma revisão bibliográfica sistêmica realizada em buscas no Scholar Google nos mostra que há uma quantidade massiva de trabalhos realizados na área de IoT e machine learning, o que também é observado quando utilizamos as duas keywords simultâneamente.
+
+Os resultados apontam que existe um interesse global nos assuntos, com a maioria dos trabalhos sendo escritos em inglês mas espalhados em países pelo mundo todo.
+
+\begin{center}
+    \begin{tabular}{ | c | c | }
+    \hline
+    Keywords & Resultados \\ 
+    \hline
+    IoT & 1,120,000 \\  
+    \hline
+    Machine Learning & 4,670,000 \\
+    \hline
+    IoT Machine Learning & 176,000 \\
+    \hline
+    Machine learning applications on IoT & 161,000 \\
+    \hline
+    Machine learning on sensors & 1,380,000 \\
+    \hline
+    \end{tabular}
+\end{center}
+
+\subsection{A Survey of Machine and Deep Learning Methods for Internet of Things (IoT) Security \cite{ali}}
 
 O artigo de Mohammed Ali Al-Garadi \emph{et al}. tem como premissa a
 quantidade crescente de dispositivos conectados que operam com
@@ -71,7 +99,7 @@ mostram ferramentas capazes de suprir as necessidades de segurança da IoT. O au
 tecnologias em machine learning aplicadas a segurança de dispositivos de IoT, criando uma base sólida de conhecimento para
 auxiliar no direcionamento de futuras pesquisas do assunto.
 
-\subsection{Crop Management with the IoT: An Interdisciplinary Survey [2]}
+\subsection{Crop Management with the IoT: An Interdisciplinary Survey \cite{vitali}}
 
 O trabalho publicado por Vitali \emph{et al.} começa com uma conceituação histórica sobre a lenta evolução tecnológica da agricultura até a revolução verde, 
 que acelerou vertiginosamente a inovação na área. Após isso, os autores citam a introdução dos dispositivos IoT na agricultura como uma segunda revolução verde,
@@ -84,7 +112,7 @@ Os pesquisadores da universidade bolognesa ainda concluem apontando que a amplia
 de proprietários de terras, assim como de diminuir impactos ambientais causados pelos plantios e aumentar a produção global de alimentos e insumos. Por fim, também fazem
 uma projeção de que em poucos anos essas tecnologias estarão nas mãos até de pequenos fazendeiros individuais continuando a melhorar a vida no campo.
 
-\subsection{Realizing an Effective COVID-19 Diagnosis System Based on Machine Learning and IOT in Smart Hospital Environment [3]}
+\subsection{Realizing an Effective COVID-19 Diagnosis System Based on Machine Learning and IOT in Smart Hospital Environment \cite{hameed}}
 
 Uma das áreas ainda não citada aqui mas que possui grandes incentivos para pesquisas em IoT são os Smart Hospitals, ambientes de amparo a saúde controlados por dispositivos
 interconectados que podem performar diversas funções, desde a captação de sintomas até a administração de medicações. Durante o ano de 2020, essas pesquisas tenderam-se a focar na pandemia
@@ -93,7 +121,7 @@ do vírus SARS-COV-2, como é o caso do artigo citado.
 No trabalho publicado por Abdulkareem \emph{et al.} nós temos uma pesquisa de cunho mais experimental, lidando diretamente com amostras do vírus. Segundo o texto, foram coletados dados de pacientes
 ao redor do mundo com a ajuda de sensores em dispositivos inteligentes.
 
-\subsection{An architecture for adaptive task planning in support of IoT-based machine learning applications for disaster scenarios [4]}
+\subsection{An architecture for adaptive task planning in support of IoT-based machine learning applications for disaster scenarios \cite{sacco}}
 
 Todos os anos, milhares de desastres naturais e acidentes causados por humanos acontecem pelo mundo, pondo em risco a vida não só das pessoas afetadas mas também dos
 profissionais responsáveis por socorrer e resgatar as vítimas dessas situações. O uso de drones para cenários como esses se tornou popular recentemente, devido ao barateamento da tecnologia
@@ -107,5 +135,10 @@ que ocorrem no ambiente ao redor dele, pronto para identificar e responder a sit
 A conclusão dos pesquisadores é de que apesar de promissor, o modelo ainda conta com algumas barreiras, como a baixa precisão de sensores em situações tão extremas. É possível que com o avanço
 na tecnologia dos sensores, aplicações como essa possam se tornar 100\% autônomas, salvando a vida de milhares de pessoas em desastres, sem arriscar a vida de socorristas.
 
+\nocite{*}
+\medskip
+
+\bibliographystyle{unsrt}
+\bibliography{biblio}
 
 \end{document}
