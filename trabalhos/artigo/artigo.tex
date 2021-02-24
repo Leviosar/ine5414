@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 
 \author{João Vitor Maia Neves Cordeiro}
 \title{Aplicações de machine learning em IoT: uma visão sobre o estado da arte}
@@ -25,11 +25,72 @@ O crescente interesse nos estudos da área de machine learning vem acompanhado d
 Da mesma forma, é notável que a expansão do mercado de IoT seja suportada pelo avanço das tecnologias em redes de computadores e mais recentemente pelo aprendizado de máquina.
 
 \subsection{Justificativa}
+
 \subsection{Objetivos Gerais}
+
+Esse artigo se propõe a introduzir alguns conceitos básicos para o melhor entendimento de seu conteúdo, discutir sobre as principais aplicações de técnicas de aprendizado de máquina em IoT bem como apontar avanços notáveis nessa área.
+
 \subsection{Objetivos Específicos}
+
+\begin{itemize}
+    \item Introduzir ao leitor os assuntos machine learning e IoT.
+    \item Listar de forma não extensiva as aplicações possíveis de técnicas de machine learning em dispositivos IoT
+    \item Comentar sobre o estado da arte das já citadas aplicações, com situações reais. 
+\end{itemize}
 
 \section{Conceitos básicos}
 
+\subsection{Machine Learning}
+
+O termo machine learning foi cunhado por Samuel Lee Arthur, ainda na década de 50, quando Arthur trabalhava como pesquisador para a IBM desenvolvendo um programa capaz de aprender a jogar xadrez. O algoritmo em questão utilizava dados de outras partidas para prever a probabilidade de vitória a cada ação, tomando o caminho com a maior probabilidade de vitória. O termo se refere a capacidade dos algoritmos de ML de evoluirem conforme a execução, baseando-se em dados para aprender a melhor forma de realizar uma função. 
+
+De forma mais prática, machine learning é área da ciência da computação que estuda algoritmos que podem aprimorar seu funcionamento por base de experiências prévias, sejam essas fornecidas por um banco de dados ou pelos dados que o algoritmo gera durante sua execução. É extensivamente utilizada em situações onde algoritmos convencionais não podem resolver o problema de forma satisfatória ou em tempo hábil.
+
+\subsection{Internet of Things}
+
+A primeira definição do termo \emph{internet of things (IoT)} veio do trabalho de Ashton \emph{et al.} e pode ser traduzido para "uma rede aberta e abrangente de objetos inteligentes que têm a capacidade de se autoorganizar, compartilhar informações, dados e recursos, reagir e agir diante de situações e mudanças no ambiente". Desde então, os "objetos inteligentes" foram renomeados para "coisas" (\emph{things}) e são descritos como dispositivos de hardware e software capaz de se conectar a uma rede com capacidade para performar uma funcionalidade específica. 
+
+Hoje, mais de 20 anos após a primeira definição, os dispositivos IoT invadiram as casas e indústrias do mundo, adquirindo um papel essencial na sociedade moderna e que segundo recente análise [iot] está em crescente tanto em lucro quanto em produtividade. Essas tecnologias podem se espalhar por diversas áreas, sendo as mais notáveis: automação residencial, agricultura inteligente e automação industrial.
+
 \section{Trabalhos correlatos}
+
+\subsection{A Survey of Machine and Deep Learning Methods for Internet of Things
+(IoT) Security [1]}
+
+O artigo de Mohammed Ali Al-Garadi \emph{et al}. tem como premissa a
+quantidade crescente de dispositivos conectados que operam com
+pouca intervenção humana para questionar a importância de se preocupar em dobro com segurança
+em um contexto de IoT.
+
+Os dispositivos IoT contam com necessidades específicas da área e muitas
+vezes únicas quanto ao escopo de desenvolvimento e aplicação, por consequência disso podem acabar
+deixando a desejar quando o assunto é segurança, sendo protegidas por meios comuns e menos modernos de criptografia e controle de acesso. 
+
+Considerando isto, as técnicas de machine learning que obtiveram grandes avanços no passado recente, se
+mostram ferramentas capazes de suprir as necessidades de segurança da IoT. O autor mostra, de forma direta e acessível, informações sobre as
+tecnologias em machine learning aplicadas a segurança de dispositivos de IoT, criando uma base sólida de conhecimento para
+auxiliar no direcionamento de futuras pesquisas do assunto.
+
+\subsection{Crop Management with the IoT: An Interdisciplinary Survey [2]}
+
+O trabalho publicado por Vitali \emph{et al.} começa com uma conceituação histórica sobre a lenta evolução tecnológica da agricultura até a revolução verde, 
+que acelerou vertiginosamente a inovação na área. Após isso, os autores citam a introdução dos dispositivos IoT na agricultura como uma segunda revolução verde,
+junto com outras novas tecnologias que aos poucos são incorporadas nas lavouras, como \emph{machine learning} e \emph{edge computing}.
+
+São citadas como principais causas dessa proliferação de tecnologias no campo o barateamento de constante de \emph{chips} capazes de executar as aplicações de ML,
+o desenvolvimento de novos sensores capazes de desempenhar suas funcionalidades com menos gasto energético e o avanço de técnicas como o \emph{deep learning}.
+
+Os pesquisadores da universidade bolognesa ainda concluem apontando que a ampliação do uso dessas tecnologias em fazendas inteligentes é capaz de otimizar os lucros
+de proprietários de terras, assim como de diminuir impactos ambientais causados pelos plantios e aumentar a produção global de alimentos e insumos. Por fim, também fazem
+uma projeção de que em poucos anos essas tecnologias estarão nas mãos até de pequenos fazendeiros individuais continuando a melhorar a vida no campo.
+
+\subsection{Realizing an Effective COVID-19 Diagnosis System Based on Machine Learning and IOT in Smart Hospital Environment [3]}
+
+Uma das áreas ainda não citada aqui mas que possui grandes incentivos para pesquisas em IoT são os Smart Hospitals, ambientes de amparo a saúde controlados por dispositivos
+interconectados que podem performar diversas funções, desde a captação de sintomas até a administração de medicações. Durante o ano de 2020, essas pesquisas tenderam-se a focar na pandemia
+do vírus SARS-COV-2, como é o caso do artigo citado.
+
+No trabalho publicado por Abdulkareem \emph{et al.} nós temos uma pesquisa de cunho mais experimental, lidando diretamente com amostras do vírus. Segundo o texto, foram coletados dados de pacientes
+ao redor do mundo com a ajuda de sensores em dispositivos inteligentes.
 
 \end{document}
