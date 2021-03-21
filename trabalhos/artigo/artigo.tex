@@ -11,18 +11,16 @@
 \maketitle
 
 \begin{abstract}
-O presente trabalho visa fomentar um debate sobre o estado da arte das aplicações de machine learning (ML) em tecnologias Internet of Things (IoT), a fim de dar ao leitor o material necessário para compreender a importância da multidisciplinaridade entre as mais diversas áreas da computação;
 
-O artigo está dividido da seguinte forma: uma breve introdução sobre os temas ML e IoT; uma série de exemplos práticos da interligação entre as duas áreas estudadas; e por fim uma discussão sobre o que há de mais avançado sendo desenvolvido em universidade e indústrias pelo mundo;
+O presente trabalho visa fomentar um debate sobre o estado da arte das aplicações de machine learning (ML) em tecnologias Internet of Things (IoT), a fim de dar ao leitor o material necessário para compreender a importância da multidisciplinaridade entre as mais diversas áreas da computação; O artigo está dividido da seguinte forma: uma breve introdução sobre os temas ML e IoT; uma série de exemplos práticos da interligação entre as duas áreas estudadas; e por fim uma discussão sobre o que há de mais avançado sendo desenvolvido em universidade e indústrias pelo mundo; Como metodologia para a coleta de dados foi realizada uma pesquisa bibliográfica buscando materiais publicados nos últimos 3 anos em periódicos e congressos nacionais e internacionais.
 
-Como metodologia para a coleta de dados foi realizada uma pesquisa bibliográfica buscando materiais publicados nos últimos 3 anos em periódicos e congressos nacionais e internacionais.
 \end{abstract}
 
 \section{Introdução}
 
 \subsection{Motivação}
 
-O crescente interesse nos estudos da área de machine learning vem acompanhado de uma certa confusão quanto as reais aplicação dessa tecnologia, sendo disseminada principalmente por publicações equivocadas da grande mídia. Desta forma, é de extrema importância que a comunidade científica formule publicações que tenham como objetivo colaborar com a formação de uma melhor fonte de conhecimento para o público geral.
+O crescente interesse nos estudos da área de machine learning vem acompanhado de uma certa confusão quanto as reais aplicação dessa tecnologia, sendo disseminada principalmente por publicações equivocadas da grande mídia \cite{maram}. Desta forma, é de extrema importância que a comunidade científica formule publicações que tenham como objetivo colaborar com a formação de uma melhor fonte de conhecimento para o público geral.
 
 Da mesma forma, é notável que a expansão do mercado de IoT seja suportada pelo avanço das tecnologias em redes de computadores e mais recentemente pelo aprendizado de máquina.
 
@@ -30,8 +28,7 @@ Da mesma forma, é notável que a expansão do mercado de IoT seja suportada pel
 
 Como será visto melhor em seguida, os dois principais conceitos trabalhados nesse artigo estão em grande foco no cenário mundial, com novas pesquisas sendo realizadas todos os dias tanto no âmbito acadêmico quanto institucional.
 
-Dessa forma, é essencial que sejam realizadas revisões bibliográficas sistemáticas com frequência, para verificar qual o estado atual dessas pesquisas. Somente a partir de um processo
-de revisão desses é possível compreender o estado da arte e definir prioridades de pesquisa futuras.
+Dessa forma, é essencial que sejam realizadas revisões bibliográficas sistemáticas com frequência, para verificar qual o estado atual dessas pesquisas. Somente a partir de um processo de revisão desses é possível compreender o estado da arte e definir prioridades de pesquisa futuras.
 
 \subsection{Objetivos Gerais}
 
@@ -44,6 +41,10 @@ Esse artigo se propõe a introduzir alguns conceitos básicos para o melhor ente
     \item Listar de forma não extensiva as aplicações possíveis de técnicas de machine learning em dispositivos IoT
     \item Comentar sobre o estado da arte das já citadas aplicações, com situações reais. 
 \end{itemize}
+
+\subsection{Organização do artigo}
+
+Este artigo está organizado da seguinte forma. Na seção 2, conceitos básicos, temos uma breve introdução aos conceitos que serão necessários para o entendimento do trabalho, a definição e explicação de IoT e Machine Learning; Na seção 3, trabalhos correlatos estão outras obras relacionadas da área, a fim de explicar a importância das aplicações de machine learning em dispositivos IoT; Na seção 4, aspectos relevantes são permeados os assuntos importantes para a contextualização do texto. Além destes, a seção também trabalha pontos específicos que devem ser levados em consideração quando tratamos de aplicações de machine learning em dispositivos IoT; Na seção 5, problemas existentes, aqui entramos nas dificuldades e desafios associados à esta área de pesquisa; Na seção 6, soluções possíveis, busca-se apresentar soluções para os desafios propostos na quinta seção; Na seção 9, referências bibliográficas estão listados todos os trabalhos utilizados como base para a confecção deste artigo, dando o devido crédito aos autores originais.
 
 \section{Conceitos básicos}
 
@@ -105,39 +106,55 @@ O trabalho publicado por Vitali \emph{et al.} começa com uma conceituação his
 que acelerou vertiginosamente a inovação na área. Após isso, os autores citam a introdução dos dispositivos IoT na agricultura como uma segunda revolução verde,
 junto com outras novas tecnologias que aos poucos são incorporadas nas lavouras, como \emph{machine learning} e \emph{edge computing}.
 
-São citadas como principais causas dessa proliferação de tecnologias no campo o barateamento de constante de \emph{chips} capazes de executar as aplicações de ML,
-o desenvolvimento de novos sensores capazes de desempenhar suas funcionalidades com menos gasto energético e o avanço de técnicas como o \emph{deep learning}.
+São citadas como principais causas dessa proliferação de tecnologias no campo o barateamento de constante de \emph{chips} capazes de executar as aplicações de ML, o desenvolvimento de novos sensores capazes de desempenhar suas funcionalidades com menos gasto energético e o avanço de técnicas como o \emph{deep learning}.
 
-Os pesquisadores da universidade bolognesa ainda concluem apontando que a ampliação do uso dessas tecnologias em fazendas inteligentes é capaz de otimizar os lucros
-de proprietários de terras, assim como de diminuir impactos ambientais causados pelos plantios e aumentar a produção global de alimentos e insumos. Por fim, também fazem
-uma projeção de que em poucos anos essas tecnologias estarão nas mãos até de pequenos fazendeiros individuais continuando a melhorar a vida no campo.
+Os pesquisadores da universidade bolognesa ainda concluem apontando que a ampliação do uso dessas tecnologias em fazendas inteligentes é capaz de otimizar os lucros de proprietários de terras, assim como de diminuir impactos ambientais causados pelos plantios e aumentar a produção global de alimentos e insumos. Por fim, também fazem uma projeção de que em poucos anos essas tecnologias estarão nas mãos até de pequenos fazendeiros individuais continuando a melhorar a vida no campo.
 
 \subsection{Realizing an Effective COVID-19 Diagnosis System Based on Machine Learning and IOT in Smart Hospital Environment \cite{hameed}}
 
-Uma das áreas ainda não citada aqui mas que possui grandes incentivos para pesquisas em IoT são os Smart Hospitals, ambientes de amparo a saúde controlados por dispositivos
-interconectados que podem performar diversas funções, desde a captação de sintomas até a administração de medicações. Durante o ano de 2020, essas pesquisas tenderam-se a focar na pandemia
-do vírus SARS-COV-2, como é o caso do artigo citado.
+Uma das áreas ainda não citada aqui mas que possui grandes incentivos para pesquisas em IoT são os Smart Hospitals, ambientes de amparo a saúde controlados por dispositivos interconectados que podem performar diversas funções, desde a captação de sintomas até a administração de medicações. Durante o ano de 2020, essas pesquisas tenderam-se a focar na pandemia do vírus SARS-COV-2, como é o caso do artigo citado.
 
-No trabalho publicado por Abdulkareem \emph{et al.} nós temos uma pesquisa de cunho mais experimental, lidando diretamente com amostras do vírus. Segundo o texto, foram coletados dados de pacientes
-ao redor do mundo com a ajuda de sensores em dispositivos inteligentes. Após isso, foram treinados modelos de 3 tipos: Naive Bayes (NB), Random Forest (RF), e
-Support Vector Machine (SVM). Dos 3 citados, o que se saiu melhor nos testes foi o modelo SVM, com uma precisão de até 95\% em diagnósticos, sendo o sugerido pelos pesquisadores para uma possível aplicação em campo.
+No trabalho publicado por Abdulkareem \emph{et al.} nós temos uma pesquisa de cunho mais experimental, lidando diretamente com amostras do vírus. Segundo o texto, foram coletados dados de pacientes ao redor do mundo com a ajuda de sensores em dispositivos inteligentes. Após isso, foram treinados modelos de 3 tipos: Naive Bayes (NB), Random Forest (RF), e Support Vector Machine (SVM). Dos 3 citados, o que se saiu melhor nos testes foi o modelo SVM, com uma precisão de até 95\% em diagnósticos, sendo o sugerido pelos pesquisadores para uma possível aplicação em campo.
 
-O artigo conclui que o modelo de ação proposto, que utiliza o Machine Learning como suporte para decisões clínicas ainda é superior aos modelos completamente automatizados, já que o fator humano continua
-sendo de grande importância para mitigar possíveis erros da máquina.
+O artigo conclui que o modelo de ação proposto, que utiliza o Machine Learning como suporte para decisões clínicas ainda é superior aos modelos completamente automatizados, já que o fator humano continua sendo de grande importância para mitigar possíveis erros da máquina.
 
 \subsection{An architecture for adaptive task planning in support of IoT-based machine learning applications for disaster scenarios \cite{sacco}}
 
-Todos os anos, milhares de desastres naturais e acidentes causados por humanos acontecem pelo mundo, pondo em risco a vida não só das pessoas afetadas mas também dos
-profissionais responsáveis por socorrer e resgatar as vítimas dessas situações. O uso de drones para cenários como esses se tornou popular recentemente, devido ao barateamento da tecnologia
-utilizada para o funcionamento básico dessas máquinas. O artigo publicado por Sacco \emph{et al.} descreve as a arquitetura de uma possível aplicação de machine learning no aprimoramento desses dispositivos.
+Todos os anos, milhares de desastres naturais e acidentes causados por humanos acontecem pelo mundo, pondo em risco a vida não só das pessoas afetadas mas também dos profissionais responsáveis por socorrer e resgatar as vítimas dessas situações. O uso de drones para cenários como esses se tornou popular recentemente, devido ao barateamento da tecnologia utilizada para o funcionamento básico dessas máquinas. O artigo publicado por Sacco \emph{et al.} descreve as a arquitetura de uma possível aplicação de machine learning no aprimoramento desses dispositivos.
 
-Ao alimentar algoritmos de aprendizado de máquina com dados em vídeo captados por drones em desastres é possível treinar um modelo capaz de interpretar em tempo real a situação
-de um novo desastre e escolher a melhor ação a ser tomada nesse caso. Em específico, a arquitetura proposta pelo trabalho lida com um cenário de múltiplos agentes semi autônomos
-que são programados para realizar tarefas gerais como apagar chamas, remover escombros e carregar vítimas. Após treinado, o modelo é conectado ao drone e passa a monitorar as atividades
-que ocorrem no ambiente ao redor dele, pronto para identificar e responder a situações de risco.
+Ao alimentar algoritmos de aprendizado de máquina com dados em vídeo captados por drones em desastres é possível treinar um modelo capaz de interpretar em tempo real a situação de um novo desastre e escolher a melhor ação a ser tomada nesse caso. Em específico, a arquitetura proposta pelo trabalho lida com um cenário de múltiplos agentes semi autônomos que são programados para realizar tarefas gerais como apagar chamas, remover escombros e carregar vítimas. Após treinado, o modelo é conectado ao drone e passa a monitorar as atividades que ocorrem no ambiente ao redor dele, pronto para identificar e responder a situações de risco.
 
-A conclusão dos pesquisadores é de que apesar de promissor, o modelo ainda conta com algumas barreiras, como a baixa precisão de sensores em situações tão extremas. É possível que com o avanço
-na tecnologia dos sensores, aplicações como essa possam se tornar 100\% autônomas, salvando a vida de milhares de pessoas em desastres, sem arriscar a vida de socorristas.
+A conclusão dos pesquisadores é de que apesar de promissor, o modelo ainda conta com algumas barreiras, como a baixa precisão de sensores em situações tão extremas. É possível que com o avanço na tecnologia dos sensores, aplicações como essa possam se tornar 100\% autônomas, salvando a vida de milhares de pessoas em desastres, sem arriscar a vida de socorristas.
+
+\section{Aspectos Relevantes}
+
+Durante a leitura dos artigos de base foi constatada uma interdisciplinaridade intensa, tanto em problemas quanto em soluções propostas a estes. É notável o esforço de pesquisadores da área da computação para compreender assuntos que tocam outras áreas do conhecimento e assim propor abordagens inteligentes para os dilemas que surgem.
+
+Por se tratar de uma área em ascenção, o espaço disponível para novas ideias e novas tentativas se mostra enorme, considerando que para cada uma das áreas aplicadas é possível que um algoritmo X ou Y se dê melhor para a solução proposta, com novos algoritmos sendo criados todos os dias e evoluções sendo feitas nos algoritmos existentes \cite{hameed}.
+
+Outra coisa que chamou atenção foi a maneira como a evolução constante e barateamento de sensores impacta nos futuros trabalhos a serem desenvolvidos na área, se hoje um equipamento se mostra inviável pelo custo de produção ou pela falta de precisão no sensor é possível que em anos ou mesmo meses, com essa barreira tecnológica sendo quebrada, algoritmos e aplicações de machine learning que se mostravam ineficientes acabem se tornando o estado da arte \cite{sacco} \cite{ali}.
+
+Ao fim, outro aspecto importante a se citar é que pelos assuntos a serem tratados nesse artigo terem um tempo de vida relativamente curto, ainda estamos possívelmente no começo de uma revolução completa no modo de vida dos seres humanos, e apesar de aspectos éticos e de segurança ainda serem preocupações importantes, as tecnologias estudadas vem se mostrando com usos impressionantes para o auxílio no crescimento do nosso padrão de vida.
+
+\section{Problemas Existentes}
+
+Foi possível identificar durante a leitura dos trabalhos correlatos que existem problemas de certa forma estão interconectados, na maior parte limitações de hardware. Nessa seção, esses problemas serão esmiuçados para futura análise e proposição de soluções. O primeiro problema a ser citado foi termo comum entre a maior parte das publicações analisadas, a relação entre custo dos sensores e a precisão das medições.
+
+Algoritmos de machine learning precisam de dados extremamente precisos, tanto durante o treinamento do modelo quanto durante sua execução, tendo isso em vista é necessário que os sensores que irão captar os dados utilizados pelos modelos tenham uma precisão satisfatória. Entretanto, quanto mais preciso o sensor, mais pesado para o bolso de quem irá custear o projeto e a produção. É normal que no impulso para economizar nos sensores os fabricantes maiores de dispositivos IoT acabem negligenciando essa precisão, o que não pode de maneira nenhuma ocorrer em cenários de serviços críticos com aplicações de machine learning \cite{sacco}.
+
+Outro problema relacionado ao hardware dos sistemas que é apontado por diversos autores é falta de poder computacional que a maior parte dos dispositivos IoT, o que faz com que os modelos tenham que ser rodados em servidores remotos com o auxílio de \emph{cloud computing}, impactando no tempo de resposta (pois mesmo que a latência seja baixa, o tempo de upload e download dos dados já pode alterar significativamente a performance do algoritmo e do sistema como um todo). Por outro lado, dispositivos que possuem maior poder computacional, além de terem acréscimo no preço também precisam de mais energia para funcionar, aumentando o tamanho e custo dos dispositivos significativamente.
+
+Outro problema conhecido e explorado por diversos autores é a preocupação quanto a segurança dos dispositivos, já que os mesmos possuem capacidades limitadas de criptografia e estão sujeitos a ataques maliciosos por utilizarem autenticações mais simples. O problema explorado por Ali \emph{et at} \cite{ali} não possui ainda uma solução definitiva, tendo em vista de que ele surge da própria natureza e definição de um dispositivo IoT. Sendo assim, somente soluções parciais ou restritas a poucos casos de uso foram implementadas e pesquisadas até o momento.
+
+\section{Soluções Possíveis}
+
+Por tratar-se de uma área ampla, com diversos problemas que não foram citados na seção anterior por terem menor relevância ou possuírem pouco material base de pesquisa, aqui iremos apenas propor algumas soluções possíveis para uma listagem não extensiva dos principais problemas do campo de estudo. Começaremos abordando o problema do poder de processamento citado acima, onde os dispositivos IoT por serem costumeiramente mais simples podem não conseguir executar as aplicações de machine learning.
+
+Primeiramente vamos dividir os serviços entre dois tipos, aqueles que precisam de resultados em tempo real (usaremos aqui o critério de resultados em tempo menor do que 1s) e aqueles que podem receber os resultados em um outro momento ou que não precisam de resultado algum. Nessa solução iremos tratar apenas do primeiro grupo, tendo em vista que para o segundo grupo um simples processamento na \emph{cloud} é o suficiente para uma solução aceitável. A abordagem proposta por alguns autores e reforçada no presente artigo é a utilização de conceitos e práticas de \emph{edge computing} \cite{vitali}.
+
+Edge computing é um paradigma de computação distribuída que traz o poder computacional e o armazenamento para perto de onde a solução é necessária, melhorando o tempo de resposta média das aplicações (por reduzir a latência) e diminuindo o uso de banda. Conceitos de \emph{edge computing} já são utilizados em algumas redes de dispositivos IoT para diminuir o custo de processamento e o gasto energético, entretanto durante a pesquisa realizada para esse artigo foram encontradas poucas menções ao seu uso para suportar aplicações de machine learning \cite{vitali}.
+
+Prevê-se que a utilização de um servidor local na rede dos dispositivos IoT posso reduzir drásticamente o custo e tempo de cada requisição feita pelos sensores, tendo em vista que além da latência mais baixa, podemos utilizar protocolos diferentes já que não iremos utilizar propriamente a \emph{world wide web} e o HTTP, mas sim uma LAN que possui taxa de transferência superior. Além disso, ao utilizar essa abordagem o suporte dado ao usuário é melhorado, tendo em vista que normalmente ao utilizar \emph{cloud computing} são usados parques de computadores terceirizados, enquanto ao utilizar \emph{edge computing} as máquinas já estão próximas do local de uso.
 
 \nocite{*}
 \medskip
