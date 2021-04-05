@@ -148,13 +148,19 @@ Outro problema conhecido e explorado por diversos autores é a preocupação qua
 
 \section{Soluções Possíveis}
 
-Por tratar-se de uma área ampla, com diversos problemas que não foram citados na seção anterior por terem menor relevância ou possuírem pouco material base de pesquisa, aqui iremos apenas propor algumas soluções possíveis para uma listagem não extensiva dos principais problemas do campo de estudo. Começaremos abordando o problema do poder de processamento citado acima, onde os dispositivos IoT por serem costumeiramente mais simples podem não conseguir executar as aplicações de machine learning.
+Por tratar-se de uma área ampla, com diversos problemas que não foram citados na seção anterior por terem menor relevância ou possuírem pouco material base de pesquisa, aqui iremos apenas propor algumas soluções possíveis para uma listagem não extensiva dos principais problemas do campo de estudo. Começaremos abordando o problema do poder de processamento citado acima, onde os dispositivos IoT por serem costumeiramente mais simples podem não conseguem executar as aplicações de machine learning.
 
 Primeiramente vamos dividir os serviços entre dois tipos, aqueles que precisam de resultados em tempo real (usaremos aqui o critério de resultados em tempo menor do que 1s) e aqueles que podem receber os resultados em um outro momento ou que não precisam de resultado algum. Nessa solução iremos tratar apenas do primeiro grupo, tendo em vista que para o segundo grupo um simples processamento na \emph{cloud} é o suficiente para uma solução aceitável. A abordagem proposta por alguns autores e reforçada no presente artigo é a utilização de conceitos e práticas de \emph{edge computing} \cite{vitali}.
 
 Edge computing é um paradigma de computação distribuída que traz o poder computacional e o armazenamento para perto de onde a solução é necessária, melhorando o tempo de resposta média das aplicações (por reduzir a latência) e diminuindo o uso de banda. Conceitos de \emph{edge computing} já são utilizados em algumas redes de dispositivos IoT para diminuir o custo de processamento e o gasto energético, entretanto durante a pesquisa realizada para esse artigo foram encontradas poucas menções ao seu uso para suportar aplicações de machine learning \cite{vitali}.
 
 Prevê-se que a utilização de um servidor local na rede dos dispositivos IoT posso reduzir drásticamente o custo e tempo de cada requisição feita pelos sensores, tendo em vista que além da latência mais baixa, podemos utilizar protocolos diferentes já que não iremos utilizar propriamente a \emph{world wide web} e o HTTP, mas sim uma LAN que possui taxa de transferência superior. Além disso, ao utilizar essa abordagem o suporte dado ao usuário é melhorado, tendo em vista que normalmente ao utilizar \emph{cloud computing} são usados parques de computadores terceirizados, enquanto ao utilizar \emph{edge computing} as máquinas já estão próximas do local de uso.
+
+\section{Conclusões e Futuros Trabalhos}
+
+Ao analisar uma pequena fração da ampla gama disponível de artigos e periódicos relacionados ao assunto estudado conseguimos obter um panomara inicial do estado da arte, retirando conclusões que ainda podem ser remodeladas posteriormente. Os problemas encontrados ao ler os materiais apontam para a necessidade do avanço e modernização da área de sensores, para aumentar a precisão dos dados utilizados pelos algoritmos de machine learning, e para a urgência na maior difusão de arquiteturas baseadas em conceitos de \emph{edge computing} para aplicações de alto desempenho em tempo real.
+
+Como trabalhos futuros, destaca-se a possibilidade de modelar e validar uma arquitetura genérica para aplicações que necessitam de um tempo de resposta excepcional, pesquisando sobre arquiteturas já existentes, identificando pontos fracos e fortes delas, a fim de construir um novo padrão capaz de se adaptar a uma boa gama de aplicações com pouca ou nenhuma modificação em si mesmo.
 
 \nocite{*}
 \medskip
